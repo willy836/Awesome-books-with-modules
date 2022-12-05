@@ -1,4 +1,4 @@
-export function displayBooks() {
+export const displayBooks = ()=> {
     const bklist = document.querySelector('.book-list');
     bklist.innerHTML = '';
   

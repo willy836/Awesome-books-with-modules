@@ -19,7 +19,7 @@ addBtn.addEventListener('click', () => {
   }
 });
 
-function saveAddedBk() {
+const saveAddedBk = ()=> {
     const booksArr = JSON.parse(localStorage.getItem('bks'));
   
     if (booksArr !== null) {
