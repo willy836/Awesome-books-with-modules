@@ -2,7 +2,6 @@ import { Books } from './modules/books.js';
 import { displayBooks } from './modules/displayBooks.js';
 import { date, options } from './modules/date.js';
 
-
 let newBooks = new Books();
 
 const addBtn = document.querySelector('.add-btn');
@@ -19,28 +18,27 @@ addBtn.addEventListener('click', () => {
   }
 });
 
-const saveAddedBk = ()=> {
-    const booksArr = JSON.parse(localStorage.getItem('bks'));
-  
-    if (booksArr !== null) {
-      let bk = booksArr.head;
-  
-      if (bk === undefined) return;
-      newBooks = new Books();
-      while (bk !== null) {
-        newBooks.add(bk.title, bk.author);
-        bk = bk.next;
-      }
+const saveAddedBk = () => {
+  const booksArr = JSON.parse(localStorage.getItem('bks'));
+
+  if (booksArr !== null) {
+    let bk = booksArr.head;
+
+    if (bk === undefined) return;
+    newBooks = new Books();
+    while (bk !== null) {
+      newBooks.add(bk.title, bk.author);
+      bk = bk.next;
     }
   }
+};
 
 window.addEventListener('load', () => {
-    displayBooks();
-    saveAddedBk();
-    
-  });
+  displayBooks();
+  saveAddedBk();
+});
 
-  const removeBtn = document.querySelector('.book-list');
+const removeBtn = document.querySelector('.book-list');
 
 removeBtn.addEventListener('click', (event) => {
   const targetBk = event.target.closest('.article');
@@ -57,7 +55,7 @@ removeBtn.addEventListener('click', (event) => {
   }
 });
 
-//date
+// date
 const dateContainer = document.querySelector('.date');
 const dateStr = date.toLocaleString('en-US', options);
 dateContainer.innerHTML = dateStr;

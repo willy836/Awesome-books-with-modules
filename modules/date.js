@@ -1,4 +1,4 @@
-import { DateTime } from "./luxon.js";
+import { DateTime } from './luxon.js';
 
 const dateContainer = document.querySelector('.date');
 export const date = DateTime.now();
@@ -12,4 +12,3 @@ export const options = {
 };
 const dateStr = date.toLocaleString('en-US', options);
 dateContainer.innerHTML = dateStr;
-

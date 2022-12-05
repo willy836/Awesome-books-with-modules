@@ -1,179 +1,178 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px;
-    margin: 10px 15px;
-    border: 2px solid #000;
-  }
-  
-  .logo {
-    font-size: 20px;
-  }
-  
-  .nav .links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav .link {
-    padding: 0 10px;
-    border-right: 1px solid #000;
-    font-size: 20px;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .date {
-    font-size: 16px;
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 15px;
-  }
-  
-  .container {
-    margin: 15px;
-  }
-  
-  .display-books {
-    height: 474px;
-  }
-  
-  .h1 {
-    margin: 15px 0;
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .book-list {
-    border: 2px solid #000;
-    margin-bottom: 35px;
-    visibility: hidden;
-  }
-  
-  .show-container {
-    visibility: visible;
-  }
-  
-  .article {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    padding: 0 10px;
-  }
-  
-  .article .title::before,
-  .article .title::after {
-    content: '"';
-  }
-  
-  .article .author::before {
-    content: ' by ';
-  }
-  
-  .article p {
-    line-height: 25px;
-    font-size: 18px;
-  }
-  
-  .article .rmv-div {
-    margin-left: auto;
-  }
-  
-  article:nth-child(odd) {
-    background: #dee2e6;
-  }
-  
-  .article .book {
-    display: flex;
-    gap: 3px;
-  }
-  
-  .h2 {
-    font-size: 30px;
-    margin-top: 8%;
-    text-align: center;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-bottom: 195px;
-    margin-top: 50px;
-    width: 40%;
-  }
-  
-  form input {
-    width: 100%;
-    height: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .form .btn {
-    text-align: end;
-  }
-  
-  form .add-btn {
-    padding: 5px 10px;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  .show {
-    display: block;
-  }
-  
-  .info {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 8%;
-    margin-bottom: 50px;
-  }
-  
-  .info-desc {
-    width: fit-content;
-    margin: 0 auto;
-  }
-  
-  .para {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .contact {
-    margin-bottom: 199px;
-  }
-  
-  .contact-ul {
-    padding: 0 40px;
-    font-size: 18px;
-  }
-  
-  .footer {
-    padding: 5px 15px;
-    margin: 10px 15px;
-    border: 2px solid #000;
-  }
-  
-  .footer .copyright {
-    font-size: 20px;
-  }
-  
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  margin: 10px 15px;
+  border: 2px solid #000;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.nav .links {
+  display: flex;
+  list-style: none;
+}
+
+.nav .link {
+  padding: 0 10px;
+  border-right: 1px solid #000;
+  font-size: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.date {
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 15px;
+}
+
+.container {
+  margin: 15px;
+}
+
+.display-books {
+  height: 474px;
+}
+
+.h1 {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.book-list {
+  border: 2px solid #000;
+  margin-bottom: 35px;
+  visibility: hidden;
+}
+
+.show-container {
+  visibility: visible;
+}
+
+.article {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.article .title::before,
+.article .title::after {
+  content: '"';
+}
+
+.article .author::before {
+  content: ' by ';
+}
+
+.article p {
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.article .rmv-div {
+  margin-left: auto;
+}
+
+article:nth-child(odd) {
+  background: #dee2e6;
+}
+
+.article .book {
+  display: flex;
+  gap: 3px;
+}
+
+.h2 {
+  font-size: 30px;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 195px;
+  margin-top: 50px;
+  width: 40%;
+}
+
+form input {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.form .btn {
+  text-align: end;
+}
+
+form .add-btn {
+  padding: 5px 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.info {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 50px;
+}
+
+.info-desc {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.para {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  margin-bottom: 199px;
+}
+
+.contact-ul {
+  padding: 0 40px;
+  font-size: 18px;
+}
+
+.footer {
+  padding: 5px 15px;
+  margin: 10px 15px;
+  border: 2px solid #000;
+}
+
+.footer .copyright {
+  font-size: 20px;
+}
