@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome books</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <div class="logo">
+                Awesome Books
+            </div>
+            <ul class="links">
+                <li class="link list"><a href="">List</a></li>
+                <li class="link add-new"><a href="">Add new</a></li>
+                <li class="link cntct"><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+    </section>
+    <main>
+        <section class="container">
+            <div class="display-books ">
+                <h1 class="h1">All awesome books</h1>
+                <div>
+                    <div class="book-list">
+                        
+                    </div>
+                </div>
+            </div>
+            <h2 class="h2 hide">Add a new book</h2>
+            <form class="form hide">
+                <div>
+                    <label for="title"></label>
+                    <input type="text" name="title" class="title" placeholder="Title">
+                </div>
+                <div>
+                    <label for="author"></label>
+                    <input type="text" name="author" class="author" placeholder="Author">
+                </div>
+                <div class="btn">
+                    <button type="button" class="add-btn">Add</button>
+                </div>
+            </form>
+            <div class="contact hide">
+                <h2 class="info">Contact information</h2>
+                <div class="info-desc">
+                    <p class="para">
+                        Do you have any questions or you just want to say "Hello"?<br>
+                        You can reach out to us!
+                    </p>
+                    <ul class="contact-ul">
+                        <li class="contact-li">
+                            Our email: mail@mail.com
+                        </li>
+                        <li class="contact-li">
+                            Our phone number: 0043586534422
+                        </li>
+                        <li class="contact-li">
+                            Our address: Streetname 22, 84503 City, Country
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="copyright">
+                Copyright ...
+            </div>
+        </footer>
+    </main>
+    <script type="module" src="/modules/book.js"></script>
+    <script type="module" src="/modules/books.js"></script>
+    <script type="module" src="/modules/date.js"></script>
+    <script type="module" src="/modules/displayBooks.js"></script>
+    <script type="module" src="/modules/luxon.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
