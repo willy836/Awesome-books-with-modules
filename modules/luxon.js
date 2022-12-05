@@ -1,4 +1,5 @@
 // these aren't really private, but nor are they really useful to document
+/* eslint-disable */
 
 /**
  * @private
@@ -7101,6 +7102,7 @@ function friendlyDateTime(dateTimeish) {
 const VERSION = '3.1.1';
 
 export {
-  DateTime, Duration, FixedOffsetZone, IANAZone, Info, Interval, InvalidZone, Settings, SystemZone, VERSION, Zone,
+  DateTime, Duration, FixedOffsetZone, IANAZone, Info, Interval, InvalidZone,
+  Settings, SystemZone, VERSION, Zone,
 };
 // # sourceMappingURL=luxon.js.map

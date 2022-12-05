@@ -1,6 +1,6 @@
 import Book from './book.js';
 
-export class Books {
+export default class Books {
   constructor() {
     this.head = null;
   }
